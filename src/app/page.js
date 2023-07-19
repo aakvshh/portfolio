@@ -2,7 +2,7 @@
 import { About } from "@/components/About/About";
 import { Contact } from "@/components/Contact/Contact";
 import Experience from "@/components/Experience/Experience";
-import { Hero } from "@/components/Home/Hero";
+import { Hero } from "@/components/Hero/Hero";
 import { Skills } from "@/components/Skills/Skills";
 import styles from './page.module.css'
 import Link from "next/link";

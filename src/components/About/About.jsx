@@ -34,7 +34,7 @@ export const About = () => {
                 <Image
                     src={GuitarImage}
                     width={500}
-                    height={150}
+                    height={250}
                     className={styles.guitarImage} 
                 />
             </div>

@@ -44,3 +44,8 @@
     color: var(--primary-color);
 }
 
+@media (max-width: 600px){
+    .title{
+        font-size: 58px;
+    }
+}
