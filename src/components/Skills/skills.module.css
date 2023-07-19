@@ -1,0 +1,53 @@
+.outerBox{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto); 
+    margin: 40px;
+    grid-auto-flow: dense;
+    gap: 10px; 
+    position: relative;
+    transition: 0.4s;
+}
+.outerBox :hover{
+    background: var(--primary-color);
+}
+.innerBox{
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    /* border-radius: 1em; */
+}
+.innerBox:nth-child(5){
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.innerBox:nth-child(2){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.innerBox:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.innerBox:nth-child(1){
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+@media (max-width: 1024px){
+    .outerBox{
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+        grid-template-rows: minmax(auto, auto);
+    }
+    .innerBox{
+        grid-column: unset !important;
+        grid-row: unset !important;
+    }
+}
+
+
