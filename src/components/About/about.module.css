@@ -1,0 +1,38 @@
+#aboutSection{
+    /* background-color: #fff; */
+    /* color: #333; */
+}
+.container{
+    display: flex;
+    gap: 6em;
+    margin: 3em 2em 3em 6.5em;
+    position: relative;
+}
+.image{
+    max-width: 40%;
+    display: grid;
+}
+.aboutInfo{
+    width: 60%;
+    margin-top: 3em;
+}
+.profileImage{
+    width: 18em;
+    height: 18em;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.guitarImage{
+    width: 28em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.socialLinks{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2.5em 0;
+}
+.info{
+    font-size: var(--largest-font-size);
+}
