@@ -51,7 +51,7 @@
     align-items: center;
 }
 .contentTitle{
-    font-size: var(--h3-font-size);
+    font-size: var(--h4-font-size);
 
 }
 .duration{

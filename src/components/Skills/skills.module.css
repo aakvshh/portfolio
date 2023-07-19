@@ -13,13 +13,14 @@
     background: var(--primary-color);
 }
 .innerBox{
-    background: #333;
+    background-color: var(--secondary-color);
+    
     padding: 20px;
     display: grid;
     font-size: 20px;
     place-items: center;
     text-align: center;
-    color: #fff;
+    color: var(--text-color-alt);
     /* border-radius: 1em; */
 }
 .innerBox:nth-child(5){
@@ -39,7 +40,7 @@
     grid-row: span 1;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 900px){
     .outerBox{
         grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
         grid-template-rows: minmax(auto, auto);
@@ -47,6 +48,7 @@
     .innerBox{
         grid-column: unset !important;
         grid-row: unset !important;
+        border-radius: 10px;
     }
 }
 

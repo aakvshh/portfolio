@@ -1,6 +1,6 @@
 #aboutSection{
-    /* background-color: #fff; */
-    /* color: #333; */
+    background-color: var(--secondary-color);
+    color: var(--text-color-alt);
 }
 .container{
     display: flex;
@@ -50,6 +50,7 @@
     }
     .container{
         gap: 4em;
+        
     }
     .guitarImage{
         width: 24em;
@@ -63,6 +64,7 @@
         margin: 2em;
         gap: 0;
         text-align: justify;
+        padding-bottom: 2em;
     }
     .aboutInfo{
         width: 90%;
@@ -79,6 +81,7 @@
     .guitarImage{
         transform: translateX(-50%, 0);
         bottom: -30%;
+        margin-bottom: 2em;
     }
     .info{
         font-size: var(--largest-font-size);

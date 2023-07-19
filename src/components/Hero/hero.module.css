@@ -1,6 +1,7 @@
 .hero{
     background-color: var(--first-gradient);
     /* padding-bottom: 180px; */
+    background-color: var(--bg-color-alt);
     position: relative;
 }
 .wrapper{
@@ -12,7 +13,6 @@
     width: 100%;
     text-align: center;
     margin-top: 2em;
-    
 
 }
 
@@ -59,8 +59,8 @@
   background-size: 500px;
   background-repeat: no-repeat;
   background-position: 0%;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
   padding: 30px 22px;
   text-align: center;
   color: #000;

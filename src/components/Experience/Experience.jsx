@@ -28,11 +28,11 @@ export default async function Experience() {
     const achievements = await fetchAchievementsData();
 
   return (
-    <section className="section">
+    <section className="section" id={styles.highlights}>
         <h2 className="title">
             Highlights
         </h2>
-        <p className="subTitle">My <span>Learnings</span></p>
+        <p className="subTitle">My <span>Learnings</span></p><br />
 
         <div className={styles.container}>
             <div className={styles.column}>

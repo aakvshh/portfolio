@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import styles from './contact.module.css'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
@@ -7,8 +9,17 @@ import {FaYoutube} from 'react-icons/fa'
 import {BiLogoGmail} from 'react-icons/bi'
 
 export const Contact = () => {
+
+    const [input, setInput] = useState({message: ''})
+
+    const handleChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        setInput({...input, [name]: value});
+    }
+
   return (
-    <section className="section">
+    <section className="section" id={styles.contactSection}>
         <h2 className="title">Contact Me</h2>
         <p className="subTitle">Let's Connect</p><br /><br />
 
@@ -21,8 +32,10 @@ export const Contact = () => {
                 <input
                     className={styles.inputField}
                     type="text"
+                    name='message'
                     placeholder="Enter text"
-                    
+                    value={input.message}
+                    onChange={handleChange}
                 />
                 <button className={styles.inputButton}><AiOutlineArrowRight size={16.65} /></button>
                 </div>

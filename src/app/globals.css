@@ -1,10 +1,13 @@
 :root{
   
   /* Colors  */
-  --primary-color: hsl(165, 60%, 40%);
+  --primary-color: #6D9886;
+  --secondary-color: #EAEAEA;
+  --tertiary-color: #FF2E63;
   --title-color: hsl(0, 0, 100%);
   --text-color: hsl(0, 0%, 92%);
-  --bg-color: hsl(216, 18%, 16%);
+  --text-color-alt: #263A29;
+  --bg-color: #252A34;
   --bg-color-alt: hsl(213, 10%, 21%);
   --container-color: hsl(217, 18%, 14%);
   --border-color: hsl(210, 2%, 65%);
