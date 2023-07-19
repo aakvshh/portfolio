@@ -30,7 +30,7 @@ export default async function Experience() {
   return (
     <section className="section">
         <h2 className="title">
-            Experience
+            Highlights
         </h2>
         <p className="subTitle">My <span>Learnings</span></p>
 
@@ -53,7 +53,7 @@ export default async function Experience() {
             </div>
 
             <div className={styles.column}>
-                <h3 className={styles.header}>Achievements</h3>
+                <h3 className={styles.header}>Projects</h3>
                 <div className={styles.items}>
                 
                 {achievements.map(value => (

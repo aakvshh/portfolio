@@ -20,6 +20,7 @@ export const Skills = () => {
                         width={200}
                         height={200}
                         className={styles.image}
+                        alt=""
                     />
                     <p>React.JS</p>
                 </div>
@@ -31,6 +32,7 @@ export const Skills = () => {
                         width={200}
                         height={200}
                         className={styles.image}
+                        alt=""
                     />
                     <p>React.JS</p>
                 </div>
@@ -42,6 +44,7 @@ export const Skills = () => {
                         width={200}
                         height={200}
                         className={styles.image}
+                        alt=""
                     />
                     <p>React.JS</p>
                 </div>
@@ -53,6 +56,7 @@ export const Skills = () => {
                         width={200}
                         height={200}
                         className={styles.image}
+                        alt=''
                     />
                     <p>React.JS</p>
                 </div>
@@ -64,6 +68,7 @@ export const Skills = () => {
                         width={200}
                         height={200}
                         className={styles.image}
+                        alt=''
                     />
                     <p>React.JS</p>
                 </div>
@@ -75,6 +80,7 @@ export const Skills = () => {
                         width={200}
                         height={200}
                         className={styles.image}
+                        alt=''
                     />
                     <p>React.JS</p>
                 </div>
@@ -86,6 +92,7 @@ export const Skills = () => {
                         width={200}
                         height={200}
                         className={styles.image}
+                        alt=''
                     />
                     <p>React.JS</p>
                 </div>
