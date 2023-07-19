@@ -5,19 +5,18 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import {FaYoutube} from 'react-icons/fa'
 import {BiLogoGmail} from 'react-icons/bi'
-import Link from 'next/link'
 
 export const Contact = () => {
   return (
     <section className="section">
         <h2 className="title">Contact Me</h2>
-        <p className="subTitle">Let's Connect</p>
+        <p className="subTitle">Let's Connect</p><br /><br />
 
         <div className={styles.container}>
-            <p>The thrill of working on dynamic projects is what pushes me forward. Reach out, and let's bring those ideas to life.</p>
+            <p style={{fontSize: '20px', margin: '0 3em'}} className={styles.tp}>The thrill of working on dynamic projects is what pushes me forward. Reach out, and let's bring those ideas to life.</p><br /><br /><br />
 
             <div className={styles.message}>
-                <p>Connect with me</p>
+                <p style={{fontSize: '18px'}}><b>Connect with me!</b></p>
                 <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 <input
                     className={styles.inputField}
@@ -25,7 +24,7 @@ export const Contact = () => {
                     placeholder="Enter text"
                     
                 />
-                <button className={styles.inputButton}><AiOutlineArrowRight /></button>
+                <button className={styles.inputButton}><AiOutlineArrowRight size={16.65} /></button>
                 </div>
 
             </div>

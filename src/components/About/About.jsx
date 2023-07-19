@@ -28,8 +28,11 @@ export const About = () => {
             </div>
             <div className={styles.aboutInfo}>
                 <p className={styles.info}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id est eaque quis culpa natus aliquid nostrum, quam tempore tempora doloribus at atque beatae deserunt velit maxime, in, dolore animi?<br />
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate illo eveniet ducimus veritatis sit corporis voluptates nemo odio doloribus!
+                    Hi, I am Aakash Kasabekar, a CS student with a passion for Front-End development, actively seeking opportunities to make meaningful contributions.  
+                    <br />
+                    I'm eager to craft captivating and user-friendly experiences that leave a positive impact.
+                    In my free time, I play guitar.
+                    
                 </p>
                 <Image
                     src={GuitarImage}

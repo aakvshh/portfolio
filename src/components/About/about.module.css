@@ -14,18 +14,20 @@
 }
 .aboutInfo{
     width: 60%;
-    margin-top: 3em;
+    margin-top: 1.2em;
 }
 .profileImage{
     width: 18em;
     height: 18em;
     border-radius: 50%;
     border: 10px solid #fff;
+    object-fit: cover;
+    
 }
 .guitarImage{
     width: 28em;
     position: absolute;
-    bottom: -15%;
+    bottom: -16%;
     right: 0;
 }
 .socialLinks{
@@ -34,7 +36,7 @@
     margin: 2.5em 0;
 }
 .info{
-    font-size: var(--largest-font-size);
+    font-size: var(--h5-font-size);
 }
 
 @media (max-width: 1088px){
@@ -77,5 +79,17 @@
     .guitarImage{
         transform: translateX(-50%, 0);
         bottom: -30%;
+    }
+    .info{
+        font-size: var(--largest-font-size);
+    }
+}
+@media (max-width: 630px){
+    .container{
+        margin: 1em;
+    }
+    .profileImage{
+        max-width: 12em;
+        height: 12em;
     }
 }

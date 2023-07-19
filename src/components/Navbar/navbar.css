@@ -139,3 +139,9 @@
   letter-spacing: 4px;
   font-size: 20px;
 }
+
+@media (max-width: 550px){
+  .menu-icon{
+    padding: 2.5em 2em;
+  }
+}

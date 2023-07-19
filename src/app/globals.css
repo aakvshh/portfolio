@@ -105,13 +105,13 @@ img{
 }
 .subTitle{
   color: var(--primary-color);
-  font-size: var(--smaller-font-size);
+  font-size: var(--larger-font-size);
   text-transform: uppercase;
   font-weight: 700;
 }
 .subTitle span {
   color: var(--title-color);
-  font-size: var(--h3-font-size);
+  font-size: var(--larger-font-size);
   text-transform: capitalize;
   margin-left: 10px;
 }

@@ -1,7 +1,13 @@
 import React from 'react'
 import styles from './skills.module.css'
 import Image from 'next/image'
-import ReactImage from '../../assets/react-js.svg'
+import ReactLogo from '../../assets/react-js.svg'
+import GithubLogo from '../../assets/github.svg'
+import MongoLogo from '../../assets/mongodb.svg' 
+import MysqlLogo from '../../assets/mysql.svg'
+import NextLogo from '../../assets/next-js.svg'
+import NodeLogo from '../../assets/node-js.svg'
+import TailwindLogo from '../../assets/tailwind-css.svg'
 
 
 export const Skills = () => {
@@ -16,7 +22,7 @@ export const Skills = () => {
             <div className={styles.innerBox}>
                 <div className={styles.content}>
                     <Image 
-                        src={ReactImage}
+                        src={ReactLogo}
                         width={200}
                         height={200}
                         className={styles.image}
@@ -28,73 +34,73 @@ export const Skills = () => {
             <div className={styles.innerBox}>
                 <div className={styles.content}>
                     <Image 
-                        src={ReactImage}
+                        src={GithubLogo}
                         width={200}
                         height={200}
                         className={styles.image}
                         alt=""
                     />
-                    <p>React.JS</p>
+                    <p>Github</p>
                 </div>
             </div>
             <div className={styles.innerBox}>
                 <div className={styles.content}>
                     <Image 
-                        src={ReactImage}
+                        src={MongoLogo}
                         width={200}
                         height={200}
                         className={styles.image}
                         alt=""
                     />
-                    <p>React.JS</p>
+                    <p>MongoDB</p>
                 </div>
             </div>
             <div className={styles.innerBox}>
                 <div className={styles.content}>
                     <Image 
-                        src={ReactImage}
+                        src={TailwindLogo}
                         width={200}
                         height={200}
                         className={styles.image}
                         alt=''
                     />
-                    <p>React.JS</p>
+                    <p>TailwindCSS</p>
                 </div>
             </div>
             <div className={styles.innerBox}>
                 <div className={styles.content}>
                     <Image 
-                        src={ReactImage}
+                        src={NextLogo}
                         width={200}
                         height={200}
                         className={styles.image}
                         alt=''
                     />
-                    <p>React.JS</p>
+                    <p>Next.JS</p>
                 </div>
             </div>
             <div className={styles.innerBox}>
                 <div className={styles.content}>
                     <Image 
-                        src={ReactImage}
+                        src={MysqlLogo}
                         width={200}
                         height={200}
                         className={styles.image}
                         alt=''
                     />
-                    <p>React.JS</p>
+                    <p>MySQL</p>
                 </div>
             </div>
             <div className={styles.innerBox}>
                 <div className={styles.content}>
                     <Image 
-                        src={ReactImage}
+                        src={NodeLogo}
                         width={200}
                         height={200}
                         className={styles.image}
                         alt=''
                     />
-                    <p>React.JS</p>
+                    <p>Node.JS</p>
                 </div>
             </div>
             
