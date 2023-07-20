@@ -20,7 +20,7 @@ export default function Home() {
       <Contact />
 
       <div className={styles.footer}>
-      <p className={styles.footertext}>Also, I have a Youtube Channel, <Link href="">visit here</Link></p>
+      <p className={styles.footertext}><b>Also, I have a Youtube Channel, <Link href="https://www.youtube.com/@reelitar" className={styles.link}>visit here</Link></b></p>
       </div>
     </main>
   )

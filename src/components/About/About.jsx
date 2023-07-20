@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export const About = () => {
   return (
-    <section className="section" id={styles.aboutSection}>
+    <section className="section" id="aboutSection">
         <h2 className="title">About Me</h2>
         <p className="subTitle">A short <span>Summary</span></p>
 
@@ -20,11 +20,12 @@ export const About = () => {
                     width={300}
                     height={300}
                     className={styles.profileImage} 
+                    alt=""
                 />
                 
                 <div className={styles.socialLinks}>
-                    <Link style={{textDecoration: 'none', color: 'aliceblue'}} href="https://www.linkedin.com/in/aakash-kasabekar-b36133202/"><FaLinkedinIn size={40} /></Link>
-                    <Link style={{textDecoration: 'none', color: 'aliceblue'}} href="https://github.com/aakvshh"><FaGithub size={40} /></Link>
+                    <Link style={{textDecoration: 'none', color: '#333'}} href="https://www.linkedin.com/in/aakash-kasabekar-b36133202/" className={styles.link}><FaLinkedinIn size={40} /></Link>
+                    <Link style={{textDecoration: 'none', color: '#333'}} href="https://github.com/aakvshh" className={styles.link}><FaGithub size={40} /></Link>
                 </div>
             </div>
             <div className={styles.aboutInfo}>
@@ -40,6 +41,7 @@ export const About = () => {
                     width={500}
                     height={250}
                     className={styles.guitarImage} 
+                    alt=""
                 />
             </div>
 

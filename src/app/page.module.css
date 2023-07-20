@@ -5,10 +5,17 @@
 .footer{
     text-align: center;
     padding: 1em 0;
-    background-color: #333;
+    background-color: #F2E7D5;
+    color: #333;
 }
 .footerText{
     position: absolute;
     bottom: 0;
-    padding: 8px;
+    padding: 6px;
+}
+.link{
+    text-decoration: underline;
+}
+.link:hover{
+    color: var(--primary-color);
 }

@@ -7,16 +7,32 @@ import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
 import {FaYoutube} from 'react-icons/fa'
 import {BiLogoGmail} from 'react-icons/bi'
+import Link from 'next/link'
+import axios from 'axios'
 
 export const Contact = () => {
 
-    const [input, setInput] = useState({message: ''})
+    const [input, setInput] = useState({ message: '' });
 
     const handleChange = (e) => {
         const name = e.target.name;
         const value = e.target.value;
-        setInput({...input, [name]: value});
-    }
+        setInput({ ...input, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        axios
+            .post('https://sheet.best/api/sheets/c812f10e-ae5a-4cca-a10f-a1f64a102180', input)
+            .then((res) => {
+                console.log(res);
+                setInput({ message: '' });
+            })
+            .catch((error) => {
+                console.error('Error storing data:', error);
+            });
+    };
 
   return (
     <section className="section" id="contactSection">
@@ -27,27 +43,32 @@ export const Contact = () => {
             <p style={{fontSize: '20px', margin: '0 2em'}} className={styles.tp}>The thrill of working on dynamic projects is what pushes me forward. Reach out, and let's bring those ideas to life.</p><br /><br /><br />
 
             <div className={styles.message}>
-                <p style={{fontSize: '18px'}}><b>Connect with me!</b></p>
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                <input
-                    className={styles.inputField}
-                    type="text"
-                    name='message'
-                    placeholder="Enter text"
-                    value={input.message}
-                    onChange={handleChange}
-                />
-                <button className={styles.inputButton}><AiOutlineArrowRight size={16.65} /></button>
-                </div>
-
+                <p style={{ fontSize: '18px' }}>
+                    <b>Connect with me!</b>
+                </p>
+                <form onSubmit={handleSubmit}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <input
+                            className={styles.inputField}
+                            type="text"
+                            name="message"
+                            placeholder="Enter text"
+                            value={input.message}
+                            onChange={handleChange}
+                        />
+                        <button className={styles.inputButton}>
+                            <AiOutlineArrowRight size={16.65} />
+                        </button>
+                    </div>
+                </form>
             </div>
             <div className={styles.footer}>
                 <h2 className="title">Socials</h2><br /><br />
                 <div className={styles.socials}>
-                    <FaLinkedinIn size={40} className={styles.link} />
-                    <FaGithub size={40} className={styles.link} />
-                    <BiLogoGmail size={40} className={styles.link} />
-                    <FaYoutube size={40} className={styles.link} />
+                    <Link style={{textDecoration: 'none', color: '#6D9886'}} href="https://www.linkedin.com/in/aakash-kasabekar-b36133202/"><FaLinkedinIn size={40} className={styles.link} /></Link>
+                    <Link style={{textDecoration: 'none', color: '#6D9886'}} href="https://github.com/aakvshh"><FaGithub size={40} className={styles.link} /></Link>
+                    <Link style={{textDecoration: 'none', color: '#6D9886'}} href="mailto:aakashkasabekar@gmail.com"><BiLogoGmail size={40} className={styles.link} /></Link>
+                    <Link style={{textDecoration: 'none', color: '#6D9886'}} href="https://www.youtube.com/@reelitar"><FaYoutube size={40} className={styles.link} /></Link>
                 </div>
             </div>
         </div>
