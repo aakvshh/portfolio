@@ -19,12 +19,12 @@ export const Contact = () => {
     }
 
   return (
-    <section className="section" id={styles.contactSection}>
+    <section className="section" id="contactSection">
         <h2 className="title">Contact Me</h2>
-        <p className="subTitle">Let's Connect</p><br /><br />
+        <p className="subTitle">Let's <span>Connect</span></p><br /><br />
 
         <div className={styles.container}>
-            <p style={{fontSize: '20px', margin: '0 3em'}} className={styles.tp}>The thrill of working on dynamic projects is what pushes me forward. Reach out, and let's bring those ideas to life.</p><br /><br /><br />
+            <p style={{fontSize: '20px', margin: '0 2em'}} className={styles.tp}>The thrill of working on dynamic projects is what pushes me forward. Reach out, and let's bring those ideas to life.</p><br /><br /><br />
 
             <div className={styles.message}>
                 <p style={{fontSize: '18px'}}><b>Connect with me!</b></p>
@@ -44,10 +44,10 @@ export const Contact = () => {
             <div className={styles.footer}>
                 <h2 className="title">Socials</h2><br /><br />
                 <div className={styles.socials}>
-                    <FaLinkedinIn size={40} />
-                    <FaGithub size={40} />
-                    <BiLogoGmail size={40} />
-                    <FaYoutube size={40} />
+                    <FaLinkedinIn size={40} className={styles.link} />
+                    <FaGithub size={40} className={styles.link} />
+                    <BiLogoGmail size={40} className={styles.link} />
+                    <FaYoutube size={40} className={styles.link} />
                 </div>
             </div>
         </div>

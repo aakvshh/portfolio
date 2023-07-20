@@ -1,20 +1,22 @@
 import React from 'react'
-import styles from './navbar.css'
+import './navbar.css'
+
 
 export const Navbar = () => {
   return (
     <>
-        <header class="header">
-    <div class="navtext-container">
-      {/* <div class="navtext">company</div> */}
+        <header className="header">
+    <div className="navtext-container">
+      {/* <div className="navtext">company</div> */}
     </div>
-    <input type="checkbox" class="menu-btn" id="menu-btn" />
-    <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li class="top"><a href="#home">home</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#projects">highlights</a></li>
-      <li><a href="#contact">contact</a></li>
+    <input type="checkbox" className="menu-btn" id="menu-btn" />
+    <label htmlFor="menu-btn" className="menu-icon"><span className="navicon"></span></label>
+    <ul className="menu">
+      <li className="top"><a href="#hero">Home</a></li>
+      <li><a href="#aboutSection">About</a></li>
+      <li><a href="#skillSection">Skills</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#contactSection">Contact</a></li>
     </ul>
 
   </header>

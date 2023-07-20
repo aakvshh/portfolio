@@ -5,6 +5,7 @@ import Profile from '../../assets/ak.jpg'
 import GuitarImage from '../../assets/guitar-sunset.svg'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
+import Link from 'next/link'
 
 export const About = () => {
   return (
@@ -22,8 +23,8 @@ export const About = () => {
                 />
                 
                 <div className={styles.socialLinks}>
-                    <FaLinkedinIn size={40} />
-                    <FaGithub size={40} />
+                    <Link style={{textDecoration: 'none', color: 'aliceblue'}} href="https://www.linkedin.com/in/aakash-kasabekar-b36133202/"><FaLinkedinIn size={40} /></Link>
+                    <Link style={{textDecoration: 'none', color: 'aliceblue'}} href="https://github.com/aakvshh"><FaGithub size={40} /></Link>
                 </div>
             </div>
             <div className={styles.aboutInfo}>

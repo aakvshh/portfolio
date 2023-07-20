@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Nunito:wght@300&family=Sacramento&display=swap');
+
 :root{
   
   /* Colors  */
@@ -47,6 +49,11 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 3.2em;
+}
+
 button,
 input, body{
   font-size: var(--normal-font-size);
@@ -68,6 +75,8 @@ ul{
 
 p{
   line-height: 1.7;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
 }
 
 a{
@@ -117,6 +126,9 @@ img{
   font-size: var(--larger-font-size);
   text-transform: capitalize;
   margin-left: 10px;
+  font-family: 'Sacramento', cursive;
+  font-size: 36px;
+  font-weight: 700;
 }
 .content{
   padding-inline: 30px 50px;
@@ -126,4 +138,15 @@ img{
 }
 .displayContent{
   max-height: 500px;
+}
+
+#aboutSection{
+  background-color: var(--secondary-color);
+  color: var(--text-color-alt);
+}
+
+@media (max-width: 900px){
+  .content{
+    padding-inline: 10px 20px;
+  }
 }

@@ -7,7 +7,7 @@ import Arrow from '../../assets/arrow.png'
 
 export const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="#hero">
         <div className={styles.wrapper}>
         <div className="container" id={styles.heroContainer}>
             <p className="subTitle">
@@ -36,7 +36,7 @@ export const Hero = () => {
                 </Link>
             </div> */}
 
-            <button className={styles.homeBtn}>Let's Connect!</button>
+            <Link href="mailto:aakashkasabekar@gmail.com"><button className={styles.homeBtn}>Let's Connect!</button></Link>
         </div>
         </div>
         <Image

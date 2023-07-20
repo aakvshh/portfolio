@@ -12,7 +12,7 @@ import TailwindLogo from '../../assets/tailwind-css.svg'
 
 export const Skills = () => {
   return (
-    <section className="section" id={styles.skillSection}>
+    <section className="section" id="skillSection">
         <h2 className="title">
             Professional Skills
         </h2>

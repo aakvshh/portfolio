@@ -1,7 +1,4 @@
-#aboutSection{
-    background-color: var(--secondary-color);
-    color: var(--text-color-alt);
-}
+
 .container{
     display: flex;
     gap: 6em;
@@ -15,6 +12,11 @@
 .aboutInfo{
     width: 60%;
     margin-top: 1.2em;
+}
+.link:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+
 }
 .profileImage{
     width: 18em;
@@ -37,6 +39,7 @@
 }
 .info{
     font-size: var(--h5-font-size);
+    font-family: 'Handlee', cursive;
 }
 
 @media (max-width: 1088px){
@@ -64,10 +67,13 @@
         margin: 2em;
         gap: 0;
         text-align: justify;
-        padding-bottom: 2em;
+        padding-bottom: 4em;
     }
     .aboutInfo{
         width: 90%;
+        margin-top: -1em;
+        
+
     }
     .image{
         width: 100%;
@@ -94,5 +100,8 @@
     .profileImage{
         max-width: 12em;
         height: 12em;
+    }
+    .info{
+        font-size: var(--large-font-size);
     }
 }
