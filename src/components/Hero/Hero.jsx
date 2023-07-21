@@ -1,11 +1,20 @@
+'use client'
+
 import React from 'react'
 import styles from './hero.module.css'
-import {FaTwitter} from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
 import Arrow from '../../assets/arrow.png'
 
 export const Hero = () => {
+
+    const emailAddress = 'aakashkasabekar@gmail.com'
+
+    const handleMailButtonClick = () => {
+        const mailtoLink = `mailto:${emailAddress}`
+        window.location.href = mailtoLink;
+    }
+
   return (
     <section className={styles.hero} id="#hero">
         <div className={styles.wrapper}>
@@ -24,19 +33,7 @@ export const Hero = () => {
                 Creating impactful experiences by transforming ideas into sleek web realities.
             </p>
 
-            {/* <div className={styles.socials}>
-                <Link href="#" className={styles.socialLink}>
-                    <FaTwitter />
-                </Link>
-                <Link href="#" className={styles.socialLink}>
-                    <FaTwitter />
-                </Link>
-                <Link href="#" className={styles.socialLink}>
-                    <FaTwitter />
-                </Link>
-            </div> */}
-
-            <Link href="mailto:aakashkasabekar@gmail.com"><button className={styles.homeBtn}>Let's Connect!</button></Link>
+            <button className={styles.homeBtn} onClick={handleMailButtonClick}>Let's Connect!</button>
         </div>
         </div>
         <Image

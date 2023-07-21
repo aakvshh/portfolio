@@ -34,6 +34,13 @@ export const Contact = () => {
             });
     };
 
+    const emailAddress = 'aakashkasabekar@gmail.com';
+
+    const handleMailButtonClick = () => {
+        const mailtoLink = `mailto:${emailAddress}`
+        window.location.href = mailtoLink;
+    }
+
   return (
     <section className="section" id="contactSection">
         <h2 className="title">Contact Me</h2>
@@ -67,7 +74,7 @@ export const Contact = () => {
                 <div className={styles.socials}>
                     <Link style={{textDecoration: 'none', color: '#6D9886'}} href="https://www.linkedin.com/in/aakash-kasabekar-b36133202/"><FaLinkedinIn size={40} className={styles.link} /></Link>
                     <Link style={{textDecoration: 'none', color: '#6D9886'}} href="https://github.com/aakvshh"><FaGithub size={40} className={styles.link} /></Link>
-                    <Link style={{textDecoration: 'none', color: '#6D9886'}} href="mailto:aakashkasabekar@gmail.com"><BiLogoGmail size={40} className={styles.link} /></Link>
+                    <button style={{textDecoration: 'none', color: '#6D9886'}} onClick={handleMailButtonClick}><BiLogoGmail size={40} className={styles.link} /></button>
                     <Link style={{textDecoration: 'none', color: '#6D9886'}} href="https://www.youtube.com/@reelitar"><FaYoutube size={40} className={styles.link} /></Link>
                 </div>
             </div>
