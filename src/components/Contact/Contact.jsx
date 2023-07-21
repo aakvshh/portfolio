@@ -12,7 +12,7 @@ import axios from 'axios'
 
 export const Contact = () => {
 
-    const [input, setInput] = useState({ message: '' });
+    const [input, setInput] = useState({ message: '', email: '' });
 
     const handleChange = (e) => {
         const name = e.target.name;
@@ -24,7 +24,7 @@ export const Contact = () => {
         e.preventDefault();
 
         axios
-            .post('https://sheet.best/api/sheets/c812f10e-ae5a-4cca-a10f-a1f64a102180', input)
+            .post('https://sheet.best/api/sheets/455e0d3b-084c-437e-bcb3-36e7024edd4c', input)
             .then((res) => {
                 console.log(res);
                 setInput({ message: '' });
@@ -51,19 +51,32 @@ export const Contact = () => {
 
             <div className={styles.message}>
                 <p style={{ fontSize: '18px' }}>
-                    <b>Connect with me!</b>
-                </p>
+                    <b style={{fontSize: '22px'}}>Connect with me!</b>
+                </p><br />
                 <form onSubmit={handleSubmit}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <input
+                            className={styles.inputField}
+                            type="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            value={input.email}
+                            onChange={handleChange}
+                        />
+                        <button type='submit' className={styles.inputButton}>
+                            <AiOutlineArrowRight size={16.65} />
+                        </button>
+                    </div>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <input
                             className={styles.inputField}
                             type="text"
                             name="message"
-                            placeholder="Enter text"
+                            placeholder="Enter message"
                             value={input.message}
                             onChange={handleChange}
                         />
-                        <button className={styles.inputButton}>
+                        <button type='submit' className={styles.inputButton}>
                             <AiOutlineArrowRight size={16.65} />
                         </button>
                     </div>
