@@ -1,108 +1,103 @@
+.container {
+  display: flex;
+  gap: 6em;
+  margin: 3em 2em 3em 6.5em;
+  position: relative;
+}
+.image {
+  max-width: 40%;
+  display: grid;
+}
+.aboutInfo {
+  width: 60%;
+  margin-top: 1.2em;
+}
+.link:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.profileImage {
+  width: 18em;
+  height: 18em;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+.guitarImage {
+  width: 28em;
+  position: absolute;
+  bottom: -16%;
+  right: 0;
+}
+.socialLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2.5em 0;
+}
 
-.container{
+.info {
+  font-size: var(--h5-font-size);
+  font-family: "Handlee", cursive;
+  text-align: left;
+}
+
+@media (max-width: 1088px) {
+  .profileImage {
+    width: 14em;
+    height: 14em;
+    margin-top: 1em;
+  }
+  .aboutInfo {
+    margin-top: 1em;
+  }
+  .container {
+    gap: 4em;
+  }
+  .guitarImage {
+    width: 24em;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    gap: 0;
+    text-align: justify;
+    padding-bottom: 4em;
+  }
+  .aboutInfo {
+    width: 90%;
+    margin-top: -1em;
+  }
+  .image {
+    width: 100%;
     display: flex;
-    gap: 6em;
-    margin: 3em 2em 3em 6.5em;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+  }
+  .socialLinks {
+    gap: 4em;
+  }
+  .guitarImage {
+    transform: translateX(-50%, 0);
+    bottom: -30%;
+    margin-bottom: 2em;
+  }
+  .info {
+    font-size: var(--largest-font-size);
+  }
 }
-.image{
-    max-width: 40%;
-    display: grid;
-}
-.aboutInfo{
-    width: 60%;
-    margin-top: 1.2em;
-}
-.link:hover{
-    color: var(--primary-color);
-    cursor: pointer;
-
-}
-.profileImage{
-    width: 18em;
-    height: 18em;
-    border-radius: 50%;
-    border: 10px solid #fff;
-    object-fit: cover;
-    
-}
-.guitarImage{
-    width: 28em;
-    position: absolute;
-    bottom: -16%;
-    right: 0;
-}
-.socialLinks{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 2.5em 0;
-}
-
-.info{
-    font-size: var(--h5-font-size);
-    font-family: 'Handlee', cursive;
-}
-
-@media (max-width: 1088px){
-    .profileImage{
-        width: 14em;
-        height: 14em;
-        margin-top: 1em;
-    }
-    .aboutInfo{
-        margin-top: 1em;
-    }
-    .container{
-        gap: 4em;
-        
-    }
-    .guitarImage{
-        width: 24em;
-    }
-}
-@media (max-width: 900px){
-    .container{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 2em;
-        gap: 0;
-        text-align: justify;
-        padding-bottom: 4em;
-    }
-    .aboutInfo{
-        width: 90%;
-        margin-top: -1em;
-        
-
-    }
-    .image{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .socialLinks{
-        gap: 4em;
-    }
-    .guitarImage{
-        transform: translateX(-50%, 0);
-        bottom: -30%;
-        margin-bottom: 2em;
-    }
-    .info{
-        font-size: var(--largest-font-size);
-    }
-}
-@media (max-width: 630px){
-    .container{
-        margin: 1em;
-    }
-    .profileImage{
-        max-width: 12em;
-        height: 12em;
-    }
-    .info{
-        font-size: var(--large-font-size);
-    }
+@media (max-width: 630px) {
+  .container {
+    margin: 1em;
+  }
+  .profileImage {
+    max-width: 12em;
+    height: 12em;
+  }
+  .info {
+    font-size: var(--large-font-size);
+  }
 }
